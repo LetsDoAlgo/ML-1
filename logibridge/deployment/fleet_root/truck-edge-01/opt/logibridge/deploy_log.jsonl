@@ -1,0 +1,72 @@
+{"ts": "2026-07-09T07:10:50Z", "task": "Gathering Facts", "verb": "ok", "detail": "new host"}
+{"ts": "2026-07-09T07:10:50Z", "task": "Create opt directory", "verb": "ok", "detail": "deployment/fleet_root/truck-edge-01/opt/logibridge already present"}
+{"ts": "2026-07-09T07:10:51Z", "task": "Copy model file", "verb": "changed", "detail": "copied model_int8.tflite (sha256:3ddf3d9e3fbe)"}
+{"ts": "2026-07-09T07:10:51Z", "task": "Copy PSI reference", "verb": "changed", "detail": "copied reference_dist.json"}
+{"ts": "2026-07-09T07:10:51Z", "task": "Copy training stats", "verb": "changed", "detail": "copied training_stats.npy"}
+{"ts": "2026-07-09T07:10:52Z", "task": "Stop old container", "verb": "ignored", "detail": "no container matching logibridge_inference (ignored)"}
+{"ts": "2026-07-09T07:10:52Z", "task": "Pull updated image", "verb": "changed", "detail": "pulled localhost:5000/logibridge-inference:latest (model:3ddf3d9e3fbe)"}
+{"ts": "2026-07-09T07:10:52Z", "task": "Start inference container", "verb": "changed", "detail": "container started"}
+{"ts": "2026-07-09T07:10:53Z", "task": "Wait and verify container", "verb": "ok", "detail": "verify: logibridge_inference is up"}
+{"ts": "2026-07-09T07:16:07Z", "task": "Gathering Facts", "verb": "ok", "detail": "present"}
+{"ts": "2026-07-09T07:16:08Z", "task": "Create opt directory", "verb": "ok", "detail": "deployment/fleet_root/truck-edge-01/opt/logibridge already present"}
+{"ts": "2026-07-09T07:16:08Z", "task": "Copy model file", "verb": "ok", "detail": "hash already matches"}
+{"ts": "2026-07-09T07:16:08Z", "task": "Copy PSI reference", "verb": "ok", "detail": "hash already matches"}
+{"ts": "2026-07-09T07:16:08Z", "task": "Copy training stats", "verb": "ok", "detail": "hash already matches"}
+{"ts": "2026-07-09T07:16:09Z", "task": "Stop old container", "verb": "changed", "detail": "container stopped"}
+{"ts": "2026-07-09T07:16:09Z", "task": "Pull updated image", "verb": "ok", "detail": "image already pulled (model hash matches)"}
+{"ts": "2026-07-09T07:16:09Z", "task": "Start inference container", "verb": "changed", "detail": "container started"}
+{"ts": "2026-07-09T07:16:10Z", "task": "Wait and verify container", "verb": "ok", "detail": "verify: logibridge_inference is up"}
+{"ts": "2026-07-09T07:16:55Z", "task": "Gathering Facts", "verb": "ok", "detail": "present"}
+{"ts": "2026-07-09T07:16:55Z", "task": "Create opt directory", "verb": "ok", "detail": "deployment/fleet_root/truck-edge-01/opt/logibridge already present"}
+{"ts": "2026-07-09T07:16:55Z", "task": "Copy model file", "verb": "ok", "detail": "hash already matches"}
+{"ts": "2026-07-09T07:16:56Z", "task": "Copy PSI reference", "verb": "ok", "detail": "hash already matches"}
+{"ts": "2026-07-09T07:16:56Z", "task": "Copy training stats", "verb": "ok", "detail": "hash already matches"}
+{"ts": "2026-07-09T07:16:56Z", "task": "Stop old container", "verb": "changed", "detail": "container stopped"}
+{"ts": "2026-07-09T07:16:57Z", "task": "Pull updated image", "verb": "ok", "detail": "image already pulled (model hash matches)"}
+{"ts": "2026-07-09T07:16:57Z", "task": "Start inference container", "verb": "changed", "detail": "container started"}
+{"ts": "2026-07-09T07:16:57Z", "task": "Wait and verify container", "verb": "ok", "detail": "verify: logibridge_inference is up"}
+{"ts": "2026-07-09T07:16:59Z", "task": "Gathering Facts", "verb": "ok", "detail": "present"}
+{"ts": "2026-07-09T07:16:59Z", "task": "Create opt directory", "verb": "ok", "detail": "deployment/fleet_root/truck-edge-01/opt/logibridge already present"}
+{"ts": "2026-07-09T07:17:00Z", "task": "Copy model file", "verb": "ok", "detail": "hash already matches"}
+{"ts": "2026-07-09T07:17:00Z", "task": "Copy PSI reference", "verb": "ok", "detail": "hash already matches"}
+{"ts": "2026-07-09T07:17:00Z", "task": "Copy training stats", "verb": "ok", "detail": "hash already matches"}
+{"ts": "2026-07-09T07:17:00Z", "task": "Stop old container", "verb": "changed", "detail": "container stopped"}
+{"ts": "2026-07-09T07:17:01Z", "task": "Pull updated image", "verb": "ok", "detail": "image already pulled (model hash matches)"}
+{"ts": "2026-07-09T07:17:01Z", "task": "Start inference container", "verb": "changed", "detail": "container started"}
+{"ts": "2026-07-09T07:17:01Z", "task": "Wait and verify container", "verb": "ok", "detail": "verify: logibridge_inference is up"}
+{"ts": "2026-07-09T07:17:03Z", "task": "Gathering Facts", "verb": "ok", "detail": "present"}
+{"ts": "2026-07-09T07:17:04Z", "task": "Create opt directory", "verb": "ok", "detail": "deployment/fleet_root/truck-edge-01/opt/logibridge already present"}
+{"ts": "2026-07-09T07:17:04Z", "task": "Copy model file", "verb": "ok", "detail": "hash already matches"}
+{"ts": "2026-07-09T07:17:04Z", "task": "Copy PSI reference", "verb": "ok", "detail": "hash already matches"}
+{"ts": "2026-07-09T07:17:04Z", "task": "Copy training stats", "verb": "ok", "detail": "hash already matches"}
+{"ts": "2026-07-09T07:17:05Z", "task": "Stop old container", "verb": "changed", "detail": "container stopped"}
+{"ts": "2026-07-09T07:17:05Z", "task": "Pull updated image", "verb": "ok", "detail": "image already pulled (model hash matches)"}
+{"ts": "2026-07-09T07:17:05Z", "task": "Start inference container", "verb": "changed", "detail": "container started"}
+{"ts": "2026-07-09T07:17:06Z", "task": "Wait and verify container", "verb": "ok", "detail": "verify: logibridge_inference is up"}
+{"ts": "2026-07-09T07:17:18Z", "task": "Gathering Facts", "verb": "ok", "detail": "present"}
+{"ts": "2026-07-09T07:17:19Z", "task": "Create opt directory", "verb": "ok", "detail": "deployment/fleet_root/truck-edge-01/opt/logibridge already present"}
+{"ts": "2026-07-09T07:17:19Z", "task": "Copy model file", "verb": "ok", "detail": "hash already matches"}
+{"ts": "2026-07-09T07:17:19Z", "task": "Copy PSI reference", "verb": "ok", "detail": "hash already matches"}
+{"ts": "2026-07-09T07:17:20Z", "task": "Copy training stats", "verb": "ok", "detail": "hash already matches"}
+{"ts": "2026-07-09T07:17:20Z", "task": "Stop old container", "verb": "changed", "detail": "container stopped"}
+{"ts": "2026-07-09T07:17:20Z", "task": "Pull updated image", "verb": "ok", "detail": "image already pulled (model hash matches)"}
+{"ts": "2026-07-09T07:17:20Z", "task": "Start inference container", "verb": "changed", "detail": "container started"}
+{"ts": "2026-07-09T07:17:21Z", "task": "Wait and verify container", "verb": "ok", "detail": "verify: logibridge_inference is up"}
+{"ts": "2026-07-09T10:29:10Z", "task": "Gathering Facts", "verb": "ok", "detail": "present"}
+{"ts": "2026-07-09T10:29:11Z", "task": "Create opt directory", "verb": "ok", "detail": "deployment/fleet_root/truck-edge-01/opt/logibridge already present"}
+{"ts": "2026-07-09T10:29:11Z", "task": "Copy model file", "verb": "ok", "detail": "hash already matches"}
+{"ts": "2026-07-09T10:29:11Z", "task": "Copy PSI reference", "verb": "ok", "detail": "hash already matches"}
+{"ts": "2026-07-09T10:29:11Z", "task": "Copy training stats", "verb": "ok", "detail": "hash already matches"}
+{"ts": "2026-07-09T10:29:12Z", "task": "Stop old container", "verb": "ok", "detail": "container running the current model (3ddf3d9e3fbe) - no stop needed"}
+{"ts": "2026-07-09T10:29:12Z", "task": "Pull updated image", "verb": "ok", "detail": "image already pulled (model hash matches)"}
+{"ts": "2026-07-09T10:29:12Z", "task": "Start inference container", "verb": "ok", "detail": "container already running with target image + model"}
+{"ts": "2026-07-09T10:29:12Z", "task": "Wait and verify container", "verb": "ok", "detail": "verify: logibridge_inference is up"}
+{"ts": "2026-07-09T10:29:16Z", "task": "Gathering Facts", "verb": "ok", "detail": "present"}
+{"ts": "2026-07-09T10:29:16Z", "task": "Create opt directory", "verb": "ok", "detail": "deployment/fleet_root/truck-edge-01/opt/logibridge already present"}
+{"ts": "2026-07-09T10:29:16Z", "task": "Copy model file", "verb": "ok", "detail": "hash already matches"}
+{"ts": "2026-07-09T10:29:17Z", "task": "Copy PSI reference", "verb": "ok", "detail": "hash already matches"}
+{"ts": "2026-07-09T10:29:17Z", "task": "Copy training stats", "verb": "ok", "detail": "hash already matches"}
+{"ts": "2026-07-09T10:29:17Z", "task": "Stop old container", "verb": "ok", "detail": "container running the current model (3ddf3d9e3fbe) - no stop needed"}
+{"ts": "2026-07-09T10:29:17Z", "task": "Pull updated image", "verb": "ok", "detail": "image already pulled (model hash matches)"}
+{"ts": "2026-07-09T10:29:17Z", "task": "Start inference container", "verb": "ok", "detail": "container already running with target image + model"}
+{"ts": "2026-07-09T10:29:18Z", "task": "Wait and verify container", "verb": "ok", "detail": "verify: logibridge_inference is up"}

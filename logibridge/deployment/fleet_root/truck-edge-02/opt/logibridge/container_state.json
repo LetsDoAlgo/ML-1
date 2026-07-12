@@ -1,0 +1,15 @@
+{
+  "image": "localhost:5000/logibridge-inference:latest",
+  "model_sha256_short": "3ddf3d9e3fbe",
+  "image_pulled_at": "2026-07-09T07:10:52Z",
+  "name": "logibridge_inference",
+  "state": "started",
+  "started_at": "2026-07-09T07:17:20Z",
+  "env": {
+    "MODEL_PATH": "/opt/logibridge/model.tflite",
+    "MQTT_BROKER_HOST": "ops.logibridge.example.com",
+    "MQTT_BROKER_PORT": "1883",
+    "TRUCK_ID": "TRUCK_EDGE_02"
+  },
+  "stopped_at": "2026-07-09T07:17:20Z"
+}

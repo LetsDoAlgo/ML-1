@@ -1,0 +1,56 @@
+---
+# Idempotent 7-task deployment flow for edge inference rollout.
+- name: Deploy LogiBridge Edge Inference
+  hosts: edge_nodes
+  become: true
+  tasks:
+    - name: Create opt directory
+      ansible.builtin.file:
+        path: /opt/logibridge
+        state: directory
+        mode: "0755"
+
+    - name: Copy model file
+      ansible.builtin.copy:
+        src: ../inference/model.tflite
+        dest: /opt/logibridge/model.tflite
+        mode: "0644"
+
+    - name: Copy PSI reference
+      ansible.builtin.copy:
+        src: ../monitoring/reference_dist.json
+        dest: /opt/logibridge/reference_dist.json
+        mode: "0644"
+
+    - name: Stop old container
+      community.docker.docker_container:
+        name: logibridge_inference
+        state: stopped
+      ignore_errors: true
+
+    - name: Pull updated image
+      community.docker.docker_image:
+        name: localhost:5000/logibridge-inference:latest
+        source: pull
+
+    - name: Start inference container
+      community.docker.docker_container:
+        name: logibridge_inference
+        image: localhost:5000/logibridge-inference:latest
+        state: started
+        restart_policy: unless-stopped
+        env:
+          MODEL_PATH: /opt/logibridge/model.tflite
+          MQTT_BROKER_HOST: "{{ mqtt_broker_host | default('localhost') }}"
+          MQTT_BROKER_PORT: "{{ mqtt_broker_port | default('1883') }}"
+          TRUCK_ID: "{{ truck_id | default('TRUCK_001') }}"
+        volumes:
+          - /opt/logibridge:/opt/logibridge
+
+    - name: Wait and verify container
+      ansible.builtin.shell: |
+        sleep 15
+        docker ps --filter name=logibridge_inference --format '{{"{{"}}.Names{{"}}"}}'
+      register: verify_container
+      changed_when: false
+      failed_when: "'logibridge_inference' not in verify_container.stdout"

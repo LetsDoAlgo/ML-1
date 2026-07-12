@@ -7,3 +7,13 @@ tensorflow-model-optimization>=0.8
 paho-mqtt>=1.6
 psutil>=5.9
 matplotlib>=3.8
+
+# MQTT broker (Windows-friendly replacement for Mosquitto used during development)
+amqtt>=0.11
+
+# Deployment dashboard (deployment/ansible_ui.py, Launch-AnsibleUI.ps1)
+streamlit>=1.30
+
+# Optional: slimmer INT8 inference runtime. Falls back to tensorflow.lite if absent.
+# Only available as a prebuilt wheel on Linux/ARM; skip on Windows.
+# tflite-runtime>=2.14 ; sys_platform != "win32"
